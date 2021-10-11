@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blub On/ Off</title>
+        <style>
+            
+        </style>
+        <script type="text/javascript">
+        function light(show){
+            // function body
+            let pic;
+            if (show ==0){
+                pic = "pic_bulboff.gif";
+            }
+            else{
+                pic = "pic_bulboon.gif";
+
+            }
+            document.getElementById('bulb').src = pic;
+        }
+
+        </script>
+    </head>
+    <body>
+        <center>
+        <h1>Blub On/ Off</h1>
+        <img id="bulb" src="./pic_bulboff.gif " alt="" width="100px" height="180px">
+        <p>
+            <button type="button" onclick="light(1)"> Light ON </button>
+            <button type="button" onclick="light(0)"> Light OFF </button>
+        </p>
+        </center>
+      <script>
+
+      </script>  
+    </body>
+</html>
