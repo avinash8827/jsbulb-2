@@ -6,6 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Blub On/ Off</title>
         <style>
+            body{
+                background-color: #000;
+            }
+            .white{
+                color: #fff;
+            }
             
         </style>
         <script type="text/javascript">
@@ -13,10 +19,15 @@
             // function body
             let pic;
             if (show ==0){
-                pic = "pic_bulboff.gif";
+                //true
+                pic = "bulb1.png";
+                document.body.style.backgroundColor='black';
             }
+                  
             else{
-                pic = "pic_bulboon.gif";
+                pic = "bulb2.png";
+                //false
+                document.body.style.backgroundColor='yellow';
 
             }
             document.getElementById('bulb').src = pic;
@@ -26,8 +37,8 @@
     </head>
     <body>
         <center>
-        <h1>Blub On/ Off</h1>
-        <img id="bulb" src="./pic_bulboff.gif " alt="" width="100px" height="180px">
+        <h1 class=" white">Blub On/ Off</h1>
+        <img id="bulb" src="./bulb1.png" alt="" width="100px" height="180px">
         <p>
             <button type="button" onclick="light(1)"> Light ON </button>
             <button type="button" onclick="light(0)"> Light OFF </button>

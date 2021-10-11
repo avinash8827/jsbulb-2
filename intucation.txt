@@ -1,0 +1,34 @@
+Events = घटना,वारदात
+
+
+Click Event
+
+onevent="some JS Code"
+event Handler
+<starttag onevent="some JS Code">Content</endtag>
+
+alert() is a built in function
+
+Function
+1. Function Defination
+	
+2. Function Calling
+	clickMe('ok') // 'ok' is actual argment
+
+Code Exection Always form Top to Bottom Line by LIne
+
+DRY = Dont Repeat Yourself
+
+Programming Conditions
+
+If Statements
+
+if(condition){
+	//true
+}else{
+	//false
+}
+
+= Assignemetn Operator
+
+== Comparision Oeprator
